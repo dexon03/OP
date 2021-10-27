@@ -13,7 +13,7 @@ int main()
 	for (int i = 1; i <= n; i++) {
 		fact *= (2 * i);
 		dodanok = pow(-1, i) * (pow(x, 2 * i) / fact);
-		suma += dodanok;
+		suma = suma + dodanok;
 	}
 
 	cout << suma;
