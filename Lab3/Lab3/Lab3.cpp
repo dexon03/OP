@@ -5,9 +5,9 @@ using namespace std;
 int main()
 {
     float x, suma, res;
-    int k, fact, n;
+    int k, fact, amount;
     cin >> x;
-    n = 0;
+    amount = 0;
     suma = 1;
     k = 1;
     fact = 1;
@@ -16,8 +16,8 @@ int main()
         suma += pow(x, 2 * k) / (pow(2, k) * fact);
         res = fabs((pow(x, 2 * k) / (pow(2, k) * fact)) - (pow(x, 2 * (k-1)) / (pow(2, (k-1)) * fact/k)));
         k++;
-        n++;
+        amount++;
     } while (res > pow(10,-5));
-    cout << "suma = " << suma << "  amount = " << n;
+    cout << "suma = " << suma << "  amount = " << amount;
 }
 
