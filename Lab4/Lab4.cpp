@@ -12,11 +12,8 @@ int main()
 	fact = 1;
 	for (int i = 1; i <= n; i++) {
 		fact *= (2 * i);
-		cout << fact << ' #'<<i;
 		dodanok = pow(-1, i) * (pow(x, 2 * i) / fact);
-		cout << dodanok <<' #' << i ;
 		suma += dodanok;
-		cout << suma << ' #' << i;
 	}
 
 	cout << suma;
