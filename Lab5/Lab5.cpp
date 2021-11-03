@@ -7,16 +7,17 @@ int main()
     int a, b, fib1, fib2, fib_digit;
     cin >> a >> b;
     for (int i = a; i <= b; i++) {
-        fib1 = 1;
+        fib1 = 0;
         fib2 = 1;
+        fib_digit = fib2;
         cout << endl << i << ":";
-        while (fib2 <= i) {
-            if (i % fib2 == 0) {
-                cout << " "<< fib2;
-            }
-            fib_digit = fib1 + fib2;    
+        while (fib_digit <= i) {
+            if (i % fib_digit == 0) {
+                cout << " "<< fib_digit;
+            }    
             fib1 = fib2;
             fib2 = fib_digit;
+            fib_digit = fib1 + fib2;
         }
     }
     
