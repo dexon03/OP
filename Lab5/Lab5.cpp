@@ -4,8 +4,7 @@ using namespace std;
 
 int main()
 {
-    int fib1, fib2, fib_digit;
-    int a, b;
+    int a, b, fib1, fib2, fib_digit;
     cin >> a >> b;
     for (int i = a; i <= b; i++) {
         fib1 = 1;
