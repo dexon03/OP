@@ -13,13 +13,13 @@ int rearrange(int n,int k){
 }
 
 int main() {
-    int dig3,dig2,dig4;
-    dig3 = rearrange(5,3);
-    dig2 = rearrange(4,2);
-    dig4 = rearrange(5,4);
-    if (dig3 > dig2 && dig3 > dig4){
-        cout << dig3;
-    }else if (dig2>dig4){
-        cout << dig2;
-    }else cout << dig4;
+    int three_digit_number,two_digit_number,four_digit_number;
+    three_digit_number = rearrange(5,3);
+    two_digit_number = rearrange(4,2);
+    four_digit_number = rearrange(5,4);
+    if (three_digit_number > two_digit_number && three_digit_number > four_digit_number){
+        cout << three_digit_number;
+    }else if (two_digit_number>four_digit_number){
+        cout << two_digit_number;
+    }else cout << four_digit_number;
 }
