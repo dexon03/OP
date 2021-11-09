@@ -13,7 +13,7 @@ two_digit_number = rearrange(4,2)
 four_digit_number = rearrange(5,4)
 
 if three_digit_number > two_digit_number and three_digit_number > four_digit_number:
-    print("Трьох значних більше")
+    print("Трьох-значних більше")
 elif two_digit_number > four_digit_number:
-    print("Дво значних більше")
-else: print ("Чотирьох значних більше")
+    print("Дво-значних більше")
+else: print ("Чотирьох-значних більше")
