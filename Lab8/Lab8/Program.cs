@@ -18,7 +18,7 @@ namespace Lab8
             Console.WriteLine("\nМасив b:");
             output(b);
             float T = (float)(max_sum(a) + max_sum(b)) / (1 + min_sum(a) * min_sum(b));
-            Console.WriteLine("T =  " + T);
+            Console.WriteLine("T = " + T);
 
         }
 
